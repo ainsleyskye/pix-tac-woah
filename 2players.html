@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="2players.js"></script>
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1>Tic-Tac-Toe!</h1></a>
+    </header>
+    <main class="game">
+      <form id="input-form">
+        <input placeholder="player 1 name" id="p1" />
+        <input placeholder="player 2 name" id="p2" />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="names">
+        <label>Player 1 (X):</label>
+        <div id="p1name"></div>
+        <label>Player 2 (O):</label>
+        <div id="p2name"></div>
+      </div>
+      <button class="reset">Reset!</button>
+      <div class="board" id="board">
+        <div class="cell" id="00"><span></span></div>
+        <div class="cell" id="01"><span></span></div>
+        <div class="cell" id="02"><span></span></div>
+        <div class="cell" id="10"><span></span></div>
+        <div class="cell" id="11"><span></span></div>
+        <div class="cell" id="12"><span></span></div>
+        <div class="cell" id="20"><span></span></div>
+        <div class="cell" id="21"><span></span></div>
+        <div class="cell" id="22"><span></span></div>
+      </div>
+      <section class="victory">
+        <h2 id="winBanner"></h2>
+      </section>
+      <section class="replay">
+        <h2 id="playAgain">Play Again</h2>
+      </section>
+    </main>
+  </body>
+</html>

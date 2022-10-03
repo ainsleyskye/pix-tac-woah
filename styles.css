@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  background-color: #201d1d;
+  color: whitesmoke;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+header > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+header > a:hover {
+  color: #ffffbe;
+}
+
+.menu {
+  display: flex;
+  background-color: #201d1d;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu > a {
+  font-family: "Press Start 2P", cursive;
+  color: whitesmoke;
+  margin: 25px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.menu > a:hover {
+  color: #ffffbe;
+}
+
+.menu > a:hover::before {
+  color: #ffffbe;
+  content: ">     ";
+}
+
+.board {
+  display: flex;
+  height: 360px;
+  width: 360px;
+  flex-wrap: wrap;
+}
+
+.board > :nth-child(n + 1) {
+  flex-basis: 120px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #201d1d;
+  height: 100vh;
+}
+
+.board > :nth-child(3n + 2) {
+  border-left: solid whitesmoke 4px;
+  border-right: solid whitesmoke 4px;
+}
+
+.board > :nth-child(n + 4):nth-child(-n + 6) {
+  border-top: solid whitesmoke 4px;
+  border-bottom: solid whitesmoke 4px;
+}
+
+#input-form {
+  display: flex;
+  justify-content: space-around;
+  background-color: #201d1d;
+}
+
+#input-form > input {
+  display: flex;
+  background-color: #201d1d;
+  color: whitesmoke;
+  font-family: "Press Start 2P", cursive;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+
+#input-form > button {
+  display: flex;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  background-color: #201d1d;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+}
+
+#input-form > button:hover {
+  color: #ffffbe;
+  border: 1px solid #ffffbe;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.names > label {
+  display: flex;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  color: whitesmoke;
+}
+
+.names > div {
+  display: flex;
+  font-family: "Press Start 2P", cursive;
+  color: whitesmoke;
+  background-color: #201d1d;
+  padding: 5px;
+}
+
+.reset {
+  display: flex;
+  margin-bottom: 100px;
+  font-family: "Press Start 2P", cursive;
+  background-color: #201d1d;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+}
+
+.reset:hover {
+  color: #ffffbe;
+  border: 1px solid #ffffbe;
+}
+
+.victory {
+  display: flex;
+  margin: 30px;
+  font-family: "Press Start 2P", cursive;
+  padding: 30px;
+  color: #ff7171;
+}
+
+.replay {
+  display: flex;
+  margin: 30px;
+  margin-top: 0px;
+  font-family: "Press Start 2P", cursive;
+  padding: 30px;
+  color: whitesmoke;
+}
+
+#playAgain:hover {
+  color: #ffffbe;
+}
